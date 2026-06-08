@@ -1,0 +1,12 @@
+# .github/workflows/manual-trigger.yml
+name: Manual Trigger Test
+
+on:
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a test step
+        run: echo "Workflow triggered!"
